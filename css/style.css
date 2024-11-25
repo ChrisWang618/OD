@@ -46,6 +46,18 @@ body {
     border-radius: 4px;
 }
 
+/* 讓特定欄位輸入框變短 */
+#name,
+#password,
+#rdate,
+#rname,
+#rphone,
+#raddress,
+#rlinename {
+    width: 200px; /* 設定短輸入框的寬度 */
+    flex: none;   /* 取消彈性佔位 */
+}
+
 button {
     margin-top: 20px;
     padding: 10px 20px;
