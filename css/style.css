@@ -22,6 +22,7 @@ body {
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    border: 2px solid #007BFF; /* 添加整體藍色邊框 */
 }
 
 .form-group {
@@ -46,17 +47,6 @@ body {
     border-radius: 4px;
 }
 
-/* 讓特定欄位輸入框變短 */
-#name,
-#password,
-#rdate,
-#rname,
-#rphone,
-#raddress,
-#rlinename {
-    width: 200px; /* 設定短輸入框的寬度 */
-    flex: none;   /* 取消彈性佔位 */
-}
 
 button {
     margin-top: 20px;
