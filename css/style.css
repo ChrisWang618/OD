@@ -67,23 +67,19 @@ button:hover {
     font-size: 14px; /* 調整字體大小 */
 }
 
-.productRow {
-    display: flex;
-    align-items: baseline; /* 讓元素基線對齊 */
-    gap: 10px;
-}
+@media (max-width: 768px) {
+    .productRow {
+        flex-direction: column; /* 改為垂直排列 */
+        align-items: stretch; /* 讓元素寬度佔滿 */
+    }
 
-.productRow select {
-    flex-grow: 1;
-    min-width: 120px;
-}
+    .productRow select, 
+    .productRow input {
+        width: 100%; /* 讓選擇框和數量框寬度佔滿容器 */
+        margin-bottom: 10px; /* 加些底部間距 */
+    }
 
-.productRow input {
-    width: 60px;
-    height: 20px;
-}
-
-.productRow button {
-    height: 36px; /* 設定按鈕高度 */
-    padding: 8px 10px;
+    .productRow button {
+        width: 100%; /* 按鈕寬度佔滿 */
+    }
 }
